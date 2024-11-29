@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root {
+    --dark-pink: #F02786;
+    --dark: #E2E2E2;
+    --bg: #F2F0F0;
+    --text: #000000;
+    --icon: #808080;
+    --font-text: 'Mulish', sans-serif;
+    --font-title: 'Inria Serif', serif;
+    --base-size: 24px;
+    --title-size: 32px;
+    --icon-size: 40px;
+}
+
+body {
+    font-family: var(--font-text);
+    font-weight: 200;
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+*,
+*:hover {
+    cursor: url('../img/cursor.png') 16 16, auto;
+}

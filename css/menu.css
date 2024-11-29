@@ -1,0 +1,129 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    background-color: var(--dark);
+    padding: 10px 20px;
+    z-index: 30;
+    position: relative;
+}
+
+.menu-title {
+    font-size: var(--title-size);
+    font-weight: bold;
+    font-family: var(--font-title);
+    color: var(--text);
+}
+
+.menu-icon,
+.menu-toggle {
+    font-size: var(--title-size);
+    color: var(--text);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-icon:hover,
+.menu-toggle:hover {
+    color: var(--dark-pink);
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-list {
+    display: none;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: var(--dark);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.menu-item {
+    padding: 5px 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.menu-btn:checked + .menu-toggle + .menu-list {
+    display: block;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn:checked + .menu-container {
+    display: block;
+}
+
+.menu-box {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: var(--bg);
+    border: 2px solid var(--dark);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    width: 200px;
+    height: auto; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    transform: translateY(-10px); 
+}
+.menu ul li{
+    font-size: var(--base-size * 0.8);
+    color: var(--text);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.menu-link:hover {
+    color: var(--dark-pink);
+    transform: scale(1.3);
+}
+.menu-close-btn{
+    font-size: var(--base-size * 0.8);
+    color: var(--text)
+}
+
+.highlight {
+    background-color: rgba(240, 180, 210, 0.3); 
+    border: 2px solid var(--dark-pink); 
+    transition: all 0.5s ease; 
+    opacity: 1;
+}
+
+.highlight.fade-out {
+    opacity: 0; 
+    pointer-events: none; 
+}

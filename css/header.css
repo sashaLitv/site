@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--bg); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.background-circle-dark {
+    position: absolute;
+    width: 320px;  
+    height: 320px; 
+    background-color: #B8A1AC; 
+    border-radius: 50%; 
+    top: 1%; 
+    left: 5%; 
+    transform: translate(-50%, -50%); 
+    z-index: -3; 
+    opacity: 0.4; 
+    filter: blur(80px); 
+}
+
+.header-logo img {
+    max-width: 100%;
+    margin-top: 5px;
+    height: auto;
+    max-height: 70px;
+    margin-left: 90px;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.header-email {
+    font-size: 16px;
+    color: var(--text);
+    margin: 0;  
+}
+
